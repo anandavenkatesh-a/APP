@@ -1,0 +1,86 @@
+<html>
+   <head>
+       <style> 
+           #display{
+              height: 60px;
+             width: 80vw;
+             border: 1px solid black;
+             background-color: azure; 
+           }
+           
+           .number{
+               height: fit-content;
+                 width: fit-content;
+                 border: 1px solid;
+                 font-size: 3rem;
+                 padding: 10px 60px 10px 60px;
+                 max-height:60px;
+           }  
+
+           #btn-container{
+              display: flex;
+              width: 80vw;
+              flex-wrap: wrap;  
+              max-width:75vw; 
+           }
+
+           .ops{
+                 height: fit-content;
+                 width: fit-content;
+                 border: 1px solid;
+                 font-size: 4rem;
+                 padding: 10px 50px 10px 50px;
+                 background-color : green; 
+                 max-height:60px; 
+           } 
+
+           #eval{
+                 height: fit-content;
+                 width: fit-content;
+                 border: 1px solid;
+                 font-size: 4rem;
+                 padding: 10px 90px 10px 90px;
+                 background-color : yellow; 
+                 max-height:60px; 
+
+           } 
+
+       </style>  
+   </head>  
+   <body>
+       <div id = "display"></div>
+       <div id = "btn-container">
+           <div class = "number" id = "1"> 1 </div>
+       <div class = "number" id = "2"> 2 </div>
+       <div class = "number" id = "3"> 3 </div>
+       <div class = "number" id = "4"> 4 </div>
+       <div class = "number" id = "5"> 5 </div>
+       <div class = "number" id = "6"> 6 </div>
+       <div class = "number" id = "7"> 7 </div>
+       <div class = "number" id = "8"> 8 </div>
+       <div class = "number" id = "9"> 9 </div>
+       <div class = "number" id = "0"> 0 </div>
+       <div class = "ops" id = "+"> + </div>
+       <div class = "ops" id = "-"> - </div>
+       <div class = "ops" id = "*"> * </div>
+       <div class = "ops" id = "/"> / </div>
+       <div id = "eval"> = </div>  
+       </div> 
+
+       <script>
+           let val = "";
+           const display = document.querySelector("#display");
+           document.body.addEventListener("click",(e) => {
+               if(e.target.id === "eval"){
+                  val = eval(val);
+                  display.innerHTML = val; 
+                  return;	 
+               }
+
+               val = val + e.target.id;
+               display.innerHTML = val;
+                                   
+           });
+       </script>
+   </body> 
+</html>
