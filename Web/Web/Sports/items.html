@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>D3 Dhaba</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.image {
+			display: flex;
+			filter: blur(8px);
+			-webkit-filter: blur(20px);
+			height: 100vh;
+			width: 100vw;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -100;
+			position: absolute;
+		}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li {
+	float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div {
+  
+}
+
+.inner {
+	padding: 60px;
+	display: inline;
+	display: flex;
+	
+}
+
+.outer {
+	display: flex flex-col;
+	display: block;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+	</style>
+    </head>
+    <body>
+	<img src="bg.jfif" class="image"/>
+        <ul>
+		<li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+	
+        <h2 align = "center">Items</h2>
+	<hr>
+	
+	<div class="outer">
+	<div class="wrapper">
+		<div class="inner"> <img src="badminton.jfif"/></div>
+		<div class="inner">  <img src="cricket.jfif"/> </div> 
+		<div class="inner">  <img src="football.jfif"/> <div> 
+		<div class="inner">  <img src="hockey.jfif"/> </div> 
+	</div>
+	</div>
+    </body>
+</html>

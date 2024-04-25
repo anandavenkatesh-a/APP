@@ -1,0 +1,11 @@
+Add this in AndroidManifest.xml after "</activity>":
+
+
+<receiver android:name=".AlarmReceiver">
+        </receiver>
+
+        <receiver android:name = ".NotificationPublisher" />
+
+
+Add this in AndroidManifest.xml before"<application>":
+    <uses-permission android:name="android.permission.VIBRATE" />
