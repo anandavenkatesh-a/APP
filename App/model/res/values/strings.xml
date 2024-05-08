@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">auth</string>
+    <string-array name="spinner_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
